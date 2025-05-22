@@ -1,7 +1,13 @@
 /* ===== Global Base Styles ===== */
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #0d1b2a; /* Midnight blue */
+  background-color: #0d1b2a;
   color: #1a1a1a;
   line-height: 1.6;
   margin: 0;
@@ -9,8 +15,7 @@ body {
 }
 
 main, section {
-  background-color: #f9f9f9; /* Light grey body area */
-  color: #1a1a1a;
+  background-color: #f9f9f9;
 }
 
 /* ===== Navbar ===== */
@@ -56,10 +61,8 @@ main, section {
 .hero p {
   font-size: 1.125rem;
   font-weight: 300;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .btn {
@@ -83,7 +86,7 @@ main, section {
 /* ===== Projects Grid ===== */
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Fixed 2-column layout */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   padding: 4rem 1rem;
   max-width: 1400px;
@@ -108,16 +111,20 @@ main, section {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.card h3, .card h2 {
+.card h2,
+.card h3 {
   font-size: 1.25rem;
   margin-bottom: 0.75rem;
   color: #0d1b2a;
   min-height: 3.5rem;
 }
 
-.card img {
-  width: auto;
-  height: 220px;
+.card img,
+.card img[alt] {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: contain;
   display: block;
   margin: 0 auto 1rem auto;
   background-color: #f9f9f9;
@@ -180,4 +187,35 @@ footer .credit {
   margin-top: 1rem;
   font-size: 0.85rem;
   color: #888;
+}
+
+/* ===== Accessibility Focus Styles ===== */
+:focus-visible {
+  outline: 2px dashed #91cfff;
+  outline-offset: 3px;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+    min-height: auto;
+  }
+
+  .card img {
+    max-height: 180px;
+  }
 }
