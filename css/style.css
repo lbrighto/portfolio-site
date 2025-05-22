@@ -1,0 +1,118 @@
+/* ===== Global Base Styles ===== */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0d1b2a; /* Midnight blue */
+  color: #1a1a1a;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+main, section {
+  background-color: #f9f9f9; /* Light grey body area */
+  color: #1a1a1a;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0d1b2a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  text-decoration: underline;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  text-align: center;
+  padding: 8rem 2rem 4rem;
+  background-color: #0d1b2a;
+  color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #1b263b;
+  color: #fff;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid #91cfff;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #91cfff;
+  color: #0d1b2a;
+}
+
+/* ===== Projects Grid ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  padding: 4rem 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover,
+.card:focus-within {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1
+
+.card img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  display: block;
+  margin: 0 auto 1rem auto;
+}

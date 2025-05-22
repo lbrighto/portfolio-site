@@ -1,61 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Lara Brighton | Data Analyst</title>
-<script src="https://cdn.tailwindcss.com(https://cdn.tailwindcss.com/)"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lara Brighton | Portfolio</title>
+
+  <!-- Google Font: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Lotus.css base theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dabo/lotus.css/lotus.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--
+    Using Lotus.css - A classless minimalist CSS theme
+    GitHub: https://github.com/dabo/lotus.css
+    License: MIT
+  -->
 </head>
-<body class="bg-white text-gray-800 font-sans">
-<header class="bg-gray-100 py-6 shadow">
-<div class="max-w-4xl mx-auto px-4">
-<h1 class="text-3xl font-bold">Lara Brighton</h1>
-<p class="text-sm text-gray-600">Data Analyst | BI | Fraud | Quality</p>
-</div>
-</header>
+<body>
 
-<main class="max-w-4xl mx-auto px-4 py-8 space-y-12">
-<!-- About -->
-<section id="about">
-<h2 class="text-2xl font-semibold mb-2">About Me</h2>
-<p>Curious, strategic, and systems-oriented analyst with a background in fraud, data quality, and BI insights. Driven by meaningful problem-solving and long-term clarity.</p>
-<ul class="list-disc pl-5 mt-2">
-<li><strong>Gallup Strengths:</strong> Context, Developer, Input, Deliberative, Learner</li>
-</ul>
-</section>
-
-<!-- Projects -->
-<section id="projects">
-  <h2 class="text-2xl font-semibold mb-2">Projects</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div class="p-4 border rounded shadow">
-      <h3 class="text-lg font-semibold">Grocery Macro Cost Analysis</h3>
-      <p class="text-sm text-gray-600">A Tableau dashboard comparing cost per calorie across diet strategies.</p>
+  <!-- Top Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <strong>Lara Brighton</strong>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
-    <div class="p-4 border rounded shadow">
-      <h3 class="text-lg font-semibold">Application Funnel KPI Tracker</h3>
-      <p class="text-sm text-gray-600">Excel tool to visualize conversion rates and drop-off patterns across onboarding flows.</p>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>LARA BRIGHTON</h1>
+    <p>This is a caption</p>
+    <a class="btn" href="#projects">Button</a>
+  </header>
+
+  <!-- Projects Grid -->
+  <main id="projects">
+    <div class="grid">
+      <article class="card">
+        <h2>Nutrition Cost Analysis</h2>
+        <img src="assets/nutrition_cost_analysis.png" alt="Illustration for Nutrition Cost Analysis">
+        <p>Explore cost-per-calorie and macronutrient value with this Tableau dashboard.</p>
+        <a href="#">View on GitHub</a>
+      </article>
+      <article class="card">
+        <h2>Loan Risk Fraud Signal Tool</h2>
+        <img src="assets/loan_risk_fraud_signal_tool.png" alt="Illustration for Loan Risk Fraud Signal Tool">
+        <p>Python + SQL project for uncovering fraud signals and identifying high-risk loan profiles.</p>
+        <a href="#">View on GitHub</a>
+      </article>
+      <article class="card">
+        <h2>Application Pipeline Dashboard</h2>
+        <img src="assets/application_funnel_tracker.png" alt="Illustration for Application Funnel Tracker">
+        <p>A front-end dashboard for monitoring conversion KPIs and dropoff points.</p>
+        <a href="#">View on GitHub</a>
+      </article>
+      <article class="card">
+        <h2>Cross-Channel Contact Audit</h2>
+        <img src="assets/cross_channel_contact_audit.png" alt="Illustration for Cross-Channel Contact Audit">
+        <p>Visual breakdown of customer communications across chat, phone, and email platforms.</p>
+        <a href="#">View on GitHub</a>
+      </article>
     </div>
-  </div>
-</section>
+  </main>
 
-<!-- Resume -->
-<section id="resume">
-  <h2 class="text-2xl font-semibold mb-2">Resume</h2>
-  <a href="resume.pdf" target="_blank" class="text-blue-600 underline">Download my resume (PDF)</a>
-</section>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I like piña coladas and getting caught in the rain. </p>
+  </section>
 
-<!-- Contact -->
-<section id="contact">
-  <h2 class="text-2xl font-semibold mb-2">Contact</h2>
-  <p>Email me at <a href="mailto:lara.brighton@gmail.com" class="text-blue-600 underline">lara@example.com</a></p>
-</section>
+  <!-- Sticky Footer -->
+  <footer id="contact">
+    <div class="footer-content">
+      <p>Contact: <a href="mailto:lara.brighton@gmail.com">lara.brighton@gmail.com</a></p>
+      <p><a href="https://github.com/yourusername">GitHub</a> | <a href="https://linkedin.com/in/yourusername">LinkedIn</a></p>
+      <p class="credit">Site styled with <a href="https://github.com/dabo/lotus.css" target="_blank">Lotus.css</a> + custom CSS</p>
+    </div>
+  </footer>
 
-
-</main>
-
-<footer class="text-center py-4 text-sm text-gray-500">
-© 2025 Lara Brighton
-</footer>
 </body>
 </html>
